@@ -26,6 +26,11 @@
 		twi3 = &twi3;
 		twi4 = &twi4;
 		twi5 = &twi5;
+		serial0 = &uart0;
+	};
+
+	chosen {
+		stdout-path = "serial0:115200n8";
 	};
 
 	box_start_os0 {
