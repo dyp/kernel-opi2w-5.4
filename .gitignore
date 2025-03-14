@@ -149,4 +149,4 @@ x509.genkey
 
 # Allwinner
 !rootfs.cpio.gz
-arch/arm64/boot/dts/sunxi/board.dts
+#arch/arm64/boot/dts/sunxi/board.dts
