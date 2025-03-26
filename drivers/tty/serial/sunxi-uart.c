@@ -1810,11 +1810,7 @@ static int sw_console_setup(struct console *co, char *options)
 
 static struct uart_driver sw_uart_driver;
 static struct console sw_console = {
-#if IS_ENABLED(CONFIG_SERIAL_8250)
-	.name = "ttyAS",
-#else
 	.name = "ttyS",
-#endif
 	.write = sw_console_write,
 	.device = uart_console_device,
 	.setup = sw_console_setup,
@@ -1831,11 +1827,7 @@ static struct console sw_console = {
 static struct uart_driver sw_uart_driver = {
 	.owner = THIS_MODULE,
 	.driver_name = SUNXI_UART_DEV_NAME,
-#if IS_ENABLED(CONFIG_SERIAL_8250)
-	.dev_name = "ttyAS",
-#else
 	.dev_name = "ttyS",
-#endif
 	.nr = SUNXI_UART_NUM,
 	.cons = SW_CONSOLE,
 };

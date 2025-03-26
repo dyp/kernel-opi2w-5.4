@@ -29,7 +29,7 @@
 #include <linux/gpio/consumer.h>
 
 #define DRIVER_NAME "st-asc"
-#define ASC_SERIAL_NAME "ttyAS"
+#define ASC_SERIAL_NAME "ttyS"
 #define ASC_FIFO_SIZE 16
 #define ASC_MAX_PORTS 8
 
