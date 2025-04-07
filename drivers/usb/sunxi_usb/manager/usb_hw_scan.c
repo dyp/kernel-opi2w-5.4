@@ -68,7 +68,7 @@ static int get_usb_gadget_functions(void)
 		return 0;
 
 	pos = 0;
-	vfs_read(filep, (char __user *)buf, 32, &pos);
+	kernel_read(filep, (char __user *)buf, 32, &pos);
 	filp_close(filep, NULL);
 
 	if (strlen(buf) == 0)
